@@ -40,6 +40,8 @@ export class LoginPage implements OnInit {
 
   submit() {}
 
+  resetPassword() {}
+
   toggleHide() {
     this.hide = !this.hide;
   }
