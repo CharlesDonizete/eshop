@@ -16,6 +16,7 @@
                 placeholder="Usuário"
                 formControlName="username"
                 autocomplete="username"
+                (keyup.enter)="submit()"
               ></ion-input>
             </ion-item>
             <ion-item>
@@ -24,10 +25,10 @@
                 placeholder="Senha"
                 formControlName="password"
                 autocomplete="password"
+                (keyup.enter)="submit()"
               >
               </ion-input>
               <ion-icon
-                color="light"
                 class="clickable"
                 [name]="hide ? 'eye' : 'eye-off' "
                 (click)="toggleHide()"
