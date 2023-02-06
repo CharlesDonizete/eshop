@@ -1,0 +1,170 @@
+{
+  "uuid": "b85d3561-d223-4c83-87ca-42451b159665",
+  "lastMigration": 25,
+  "name": "7188",
+  "endpointPrefix": "v1",
+  "latency": 0,
+  "port": 3000,
+  "hostname": "0.0.0.0",
+  "folders": [],
+  "routes": [
+    {
+      "uuid": "75e797cc-9b42-466f-b01a-ceaf5118f35e",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "login",
+      "responses": [
+        {
+          "uuid": "686ee424-6233-406e-a51f-ac2278968216",
+          "body": "{\r\n  \"username\": \"batman\",\r\n  \"name\": \"Bruce Wayne\",\r\n  \"image\": \"https://baltademos.blob.core.windows.net/eshop/batman.png\",\r\n  \"email\": \"batman@balta.io\",\r\n  \"token\": \"aHR0cHM6Ly9iYWx0YWRlbW9zLmJsb2IuY29yZS53aW5kb3dzLm5ldC9lc2hvcC9iYXRtYW4ucG5n\",\r\n  \"roles\": [\"employee\", \"manager\"]\r\n}\r\n",
+          "latency": 200,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "80f9b804-904d-4cfc-acf9-54a42187bb7e",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "reports/ms",
+      "responses": [
+        {
+          "uuid": "94f3c866-354f-4427-a2c7-bbc67a237f4c",
+          "body": "{\r\n  \"labels\": [\"Janeiro\", \"Fevereiro\", \"Março\", \"Abril\", \"Maio\", \"Junho\"],\r\n  \"datasets\": [\r\n    {\r\n      \"label\": \"# de vendas\",\r\n      \"data\": [7, 9, 12, 24, 8, 5],\r\n      \"backgroundColor\": [\r\n        \"rgba(255, 99, 132, 0.2)\",\r\n        \"rgba(54, 162, 235, 0.2)\",\r\n        \"rgba(255, 206, 86, 0.2)\",\r\n        \"rgba(75, 192, 192, 0.2)\",\r\n        \"rgba(153, 102, 255, 0.2)\",\r\n        \"rgba(255, 159, 64, 0.2)\"\r\n      ],\r\n      \"borderColor\": [\r\n        \"rgba(255, 99, 132, 1)\",\r\n        \"rgba(54, 162, 235, 1)\",\r\n        \"rgba(255, 206, 86, 1)\",\r\n        \"rgba(75, 192, 192, 1)\",\r\n        \"rgba(153, 102, 255, 1)\",\r\n        \"rgba(255, 159, 64, 1)\"\r\n      ],\r\n      \"borderWidth\": 1\r\n    }\r\n  ]\r\n}",
+          "latency": 800,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "1fd0a4e8-7489-4fb0-a26f-79491a8bbcc6",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "orders",
+      "responses": [
+        {
+          "uuid": "28d8d2a2-1850-49e6-a5d0-1e1e3dc5672f",
+          "body": "[\r\n  {\r\n    \"number\": \"8CV56R74\",\r\n    \"date\": \"2019-07-18T17:49:00.000+0000\",\r\n    \"status\": \"waiting_payment\",\r\n    \"total\": 23999,\r\n    \"customer\": { \"name\": \"Bruce Wayne\" }\r\n  },\r\n  {\r\n    \"number\": \"2795EF65\",\r\n    \"date\": \"2019-07-18T18:12:00.000+0000\",\r\n    \"status\": \"confirmed\",\r\n    \"total\": 7884,\r\n    \"customer\": { \"name\": \"Peter Parker\" }\r\n  }\r\n]\r\n",
+          "latency": 500,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "cf389f43-d2ef-465d-b06f-4b33cac8a589",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "orders/8CV56R74",
+      "responses": [
+        {
+          "uuid": "4660dfe8-05bd-4a49-9603-7fef99c64371",
+          "body": "{\r\n  \"number\": \"8CV56R74\",\r\n  \"date\": \"2019-07-18T17:49:00.000+0000\",\r\n  \"status\": \"waiting_payment\",\r\n  \"total\": 23999,\r\n  \"discount\": 990,\r\n  \"deliveryFee\": 990,\r\n  \"customer\": { \"name\": \"Bruce Wayne\" },\r\n  \"items\": [\r\n    { \"code\": \"C5BFAAF9\", \"title\": \"Ração Canil 30KG\", \"price\": 20000 },\r\n    { \"code\": \"AFA21D81\", \"title\": \"Coleira Cachorro Petz\", \"price\": 3990 }\r\n  ]\r\n}\r\n",
+          "latency": 200,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    }
+  ],
+  "rootChildren": [
+    {
+      "type": "route",
+      "uuid": "75e797cc-9b42-466f-b01a-ceaf5118f35e"
+    },
+    {
+      "type": "route",
+      "uuid": "80f9b804-904d-4cfc-acf9-54a42187bb7e"
+    },
+    {
+      "type": "route",
+      "uuid": "1fd0a4e8-7489-4fb0-a26f-79491a8bbcc6"
+    },
+    {
+      "type": "route",
+      "uuid": "cf389f43-d2ef-465d-b06f-4b33cac8a589"
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": []
+}

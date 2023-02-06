@@ -1,0 +1,13 @@
+{
+  "number": "8CV56R74",
+  "date": "2019-07-18T17:49:00.000+0000",
+  "status": "waiting_payment",
+  "total": 23999,
+  "discount": 990,
+  "deliveryFee": 990,
+  "customer": { "name": "Bruce Wayne" },
+  "items": [
+    { "code": "C5BFAAF9", "title": "Ração Canil 30KG", "price": 20000 },
+    { "code": "AFA21D81", "title": "Coleira Cachorro Petz", "price": 3990 }
+  ]
+}
