@@ -1,4 +1,3 @@
-import { UserModel } from './../../../models/user.model';
 import { DataService } from './../../../data.service';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
@@ -8,6 +7,8 @@ import {
   ToastController,
 } from '@ionic/angular';
 import { Console } from 'console';
+import { SecurityUtil } from 'src/app/utils/security.util';
+import { UserModel } from 'src/app/models/user.model';
 
 @Component({
   selector: 'app-login',
@@ -48,10 +49,11 @@ export class LoginPage implements OnInit {
     });
     loading.present();
 
+    console.log(this.form.value);
+
     this.service.authenticate(this.form.value).subscribe(
       (res: UserModel) => {
-        //SecurityUtil.set(res);
-        console.log(res);
+        SecurityUtil.set(res);
         loading.dismiss();
         this.navCtrl.navigateRoot('/');
       },

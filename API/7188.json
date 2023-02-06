@@ -4,20 +4,20 @@
   "name": "7188",
   "endpointPrefix": "v1",
   "latency": 0,
-  "port": 3000,
+  "port": 3001,
   "hostname": "0.0.0.0",
   "folders": [],
   "routes": [
     {
       "uuid": "75e797cc-9b42-466f-b01a-ceaf5118f35e",
       "documentation": "",
-      "method": "get",
+      "method": "post",
       "endpoint": "login",
       "responses": [
         {
           "uuid": "686ee424-6233-406e-a51f-ac2278968216",
           "body": "{\r\n  \"username\": \"batman\",\r\n  \"name\": \"Bruce Wayne\",\r\n  \"image\": \"https://baltademos.blob.core.windows.net/eshop/batman.png\",\r\n  \"email\": \"batman@balta.io\",\r\n  \"token\": \"aHR0cHM6Ly9iYWx0YWRlbW9zLmJsb2IuY29yZS53aW5kb3dzLm5ldC9lc2hvcC9iYXRtYW4ucG5n\",\r\n  \"roles\": [\"employee\", \"manager\"]\r\n}\r\n",
-          "latency": 200,
+          "latency": 1200,
           "statusCode": 200,
           "label": "",
           "headers": [],
@@ -152,6 +152,18 @@
     {
       "key": "Content-Type",
       "value": "application/json"
+    },
+    {
+      "key": "Access-Control-Allow-Origin",
+      "value": "*"
+    },
+    {
+      "key": "Access-Control-Allow-Headers",
+      "value": "Origin, X-Requested-With, Content-Type, Accept, x-access-token"
+    },
+    {
+      "key": "Access-Control-Allow-Methods",
+      "value": "GET, POST, PUT, DELETE, OPTIONS"
     }
   ],
   "proxyReqHeaders": [
