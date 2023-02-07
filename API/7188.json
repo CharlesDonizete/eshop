@@ -44,7 +44,7 @@
         {
           "uuid": "94f3c866-354f-4427-a2c7-bbc67a237f4c",
           "body": "{\r\n  \"labels\": [\"Janeiro\", \"Fevereiro\", \"Março\", \"Abril\", \"Maio\", \"Junho\"],\r\n  \"datasets\": [\r\n    {\r\n      \"label\": \"# de vendas\",\r\n      \"data\": [7, 9, 12, 24, 8, 5],\r\n      \"backgroundColor\": [\r\n        \"rgba(255, 99, 132, 0.2)\",\r\n        \"rgba(54, 162, 235, 0.2)\",\r\n        \"rgba(255, 206, 86, 0.2)\",\r\n        \"rgba(75, 192, 192, 0.2)\",\r\n        \"rgba(153, 102, 255, 0.2)\",\r\n        \"rgba(255, 159, 64, 0.2)\"\r\n      ],\r\n      \"borderColor\": [\r\n        \"rgba(255, 99, 132, 1)\",\r\n        \"rgba(54, 162, 235, 1)\",\r\n        \"rgba(255, 206, 86, 1)\",\r\n        \"rgba(75, 192, 192, 1)\",\r\n        \"rgba(153, 102, 255, 1)\",\r\n        \"rgba(255, 159, 64, 1)\"\r\n      ],\r\n      \"borderWidth\": 1\r\n    }\r\n  ]\r\n}",
-          "latency": 800,
+          "latency": 1500,
           "statusCode": 200,
           "label": "",
           "headers": [],
