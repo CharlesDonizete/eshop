@@ -1,17 +1,9 @@
+import { HomePageModule } from './pages/home/home.module';
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { FramePage } from './pages/shared/frame/frame.page';
 
 const routes: Routes = [
-  {
-    path: 'home',
-    loadChildren: () =>
-      import('./pages/home/home.module').then((m) => m.HomePageModule),
-  },
-  {
-    path: '',
-    redirectTo: 'home',
-    pathMatch: 'full',
-  },
   {
     path: 'login',
     loadChildren: () =>
@@ -20,18 +12,15 @@ const routes: Routes = [
       ),
   },
   {
-    path: 'frame',
-    loadChildren: () =>
-      import('./pages/shared/frame/frame.module').then(
-        (m) => m.FramePageModule
-      ),
-  },
-  {
-    path: 'frameless',
-    loadChildren: () =>
-      import('./pages/shared/frameless/frameless.module').then(
-        (m) => m.FramelessPageModule
-      ),
+    path: '',
+    component: FramePage,
+    children: [
+      {
+        path: '',
+        loadChildren: () =>
+          import('./pages/home/home.module').then((m) => m.HomePageModule),
+      },
+    ],
   },
 ];
 

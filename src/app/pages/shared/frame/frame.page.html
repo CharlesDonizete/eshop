@@ -1,17 +1,30 @@
-<ion-menu>
-  <ion-content padding>
-    <ion-list lines="none">
-      <ion-item-divider>
-        <ion-label>&nbsp;</ion-label>
-      </ion-item-divider>
+<ion-menu contentId="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title></ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding"
+    ><ion-list lines="none">
       <ion-item class="clickable" (click)="goToPage('')" detail>
-        <ion-icon slot="start" color="light" name="home"></ion-icon> Home
+        <ion-icon slot="start" name="home"></ion-icon> Home
       </ion-item>
       <ion-item class="clickable" (click)="goToPage('orders')" detail>
-        <ion-icon slot="start" color="light" name="list"></ion-icon> Pedidos
+        <ion-icon slot="start" name="list"></ion-icon> Pedidos
       </ion-item>
-    </ion-list>
-  </ion-content>
+    </ion-list></ion-content
+  >
 </ion-menu>
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding"></ion-content>
+</div>
 
 <ion-router-outlet main></ion-router-outlet>
