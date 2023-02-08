@@ -1,3 +1,5 @@
+import { ManagerGuard } from './guards/manager.guard';
+import { AuthorizedGuard } from './guards/authorized.guard';
 import { HomePageModule } from './pages/home/home.module';
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
@@ -14,6 +16,7 @@ const routes: Routes = [
   {
     path: '',
     component: FramePage,
+    canActivate: [AuthorizedGuard],
     children: [
       {
         path: '',
