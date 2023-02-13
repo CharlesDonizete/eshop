@@ -1,3 +1,4 @@
+import { OrderListComponent } from './order-list/order-list.component';
 import { LoadingComponent } from './loading/loading.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -12,6 +13,7 @@ import { UserCardComponent } from './user-card/user-card.component';
     MonthlySalesChartComponent,
     NavbarComponent,
     UserCardComponent,
+    OrderListComponent,
   ],
   imports: [CommonModule, IonicModule],
   exports: [
@@ -19,6 +21,7 @@ import { UserCardComponent } from './user-card/user-card.component';
     MonthlySalesChartComponent,
     NavbarComponent,
     UserCardComponent,
+    OrderListComponent,
   ],
 })
 export class ComponentsModule {}

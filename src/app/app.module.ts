@@ -1,3 +1,5 @@
+import { ManagerGuard } from './guards/manager.guard';
+import { AuthorizedGuard } from './guards/authorized.guard';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouteReuseStrategy } from '@angular/router';
@@ -15,7 +17,11 @@ import { FramePage } from './pages/shared/frame/frame.page';
     AppRoutingModule,
     HttpClientModule,
   ],
-  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
+  providers: [
+    AuthorizedGuard,
+    ManagerGuard,
+    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
