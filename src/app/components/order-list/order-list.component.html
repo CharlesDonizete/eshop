@@ -10,6 +10,11 @@
       *ngFor="let order of orders"
       (click)="goToOrder(order.number)"
     >
+      <h1 slot="start">
+        <app-order-status-badge
+          [status]="order.status"
+        ></app-order-status-badge>
+      </h1>
       <ion-label>
         <strong>{{ order.number }}</strong
         ><br />

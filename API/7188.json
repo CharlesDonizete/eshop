@@ -70,7 +70,7 @@
       "responses": [
         {
           "uuid": "28d8d2a2-1850-49e6-a5d0-1e1e3dc5672f",
-          "body": "[\r\n  {\r\n    \"number\": \"8CV56R74\",\r\n    \"date\": \"2019-07-18T17:49:00.000+0000\",\r\n    \"status\": \"waiting_payment\",\r\n    \"total\": 23999,\r\n    \"customer\": { \"name\": \"Bruce Wayne\" }\r\n  },\r\n  {\r\n    \"number\": \"2795EF65\",\r\n    \"date\": \"2019-07-18T18:12:00.000+0000\",\r\n    \"status\": \"confirmed\",\r\n    \"total\": 7884,\r\n    \"customer\": { \"name\": \"Peter Parker\" }\r\n  }\r\n]\r\n",
+          "body": "[\r\n  {\r\n    \"number\": \"8CV56R74\",\r\n    \"date\": \"2019-07-18T17:49:00.000+0000\",\r\n    \"status\": \"waiting_payment\",\r\n    \"total\": 23999,\r\n    \"customer\": { \"name\": \"Bruce Wayne\" }\r\n  },\r\n  {\r\n    \"number\": \"2795EF65\",\r\n    \"date\": \"2019-07-18T18:12:00.000+0000\",\r\n    \"status\": \"confirmed\",\r\n    \"total\": 7884,\r\n    \"customer\": { \"name\": \"Peter Parker\" }\r\n  },\r\n  {\r\n    \"number\": \"2795EF58\",\r\n    \"date\": \"2019-07-18T18:12:00.000+0000\",\r\n    \"status\": \"canceled\",\r\n    \"total\": 658964,\r\n    \"customer\": { \"name\": \"Jason\" }\r\n  },\r\n  {\r\n    \"number\": \"2795EF58\",\r\n    \"date\": \"2019-07-18T18:12:00.000+0000\",\r\n    \"status\": \"in_transit\",\r\n    \"total\": 4589,\r\n    \"customer\": { \"name\": \"Fred Gruger\" }\r\n  }\r\n  ,\r\n  {\r\n    \"number\": \"2795EF58\",\r\n    \"date\": \"2019-07-18T18:12:00.000+0000\",\r\n    \"status\": \"completed\",\r\n    \"total\": 658455964,\r\n    \"customer\": { \"name\": \"Jason\" }\r\n  }\r\n]\r\n",
           "latency": 500,
           "statusCode": 200,
           "label": "",
