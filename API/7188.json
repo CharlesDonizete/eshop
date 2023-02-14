@@ -120,11 +120,11 @@
       "uuid": "74518073-0283-4aca-9b14-4598213a9ea9",
       "documentation": "",
       "method": "get",
-      "endpoint": "orders/8CV56R75",
+      "endpoint": "orders/2795EF65",
       "responses": [
         {
           "uuid": "68793e56-6732-46be-a4d9-cb800a3fc38e",
-          "body": "{\n  \"number\": \"2795EF65\",\n  \"date\": \"2019-07-18T17:49:00.000+0000\",\n  \"status\": \"waiting_payment\",\n  \"total\": 23999,\n  \"discount\": 990,\n  \"deliveryFee\": 990,\n  \"customer\": {\n    \"name\": \"Bruce Wayne\"\n  },\n  \"items\": [\n    {\n      \"code\": \"C5BFAAF9\",\n      \"title\": \"Ração Canil 30KG\",\n      \"price\": 20000\n    },\n    {\n      \"code\": \"AFA21D81\",\n      \"title\": \"Coleira Cachorro Petz\",\n      \"price\": 3990\n    }\n    ,\n    {\n      \"code\": \"AFA21F85\",\n      \"title\": \"Cama de Cachorro\",\n      \"price\": 6028\n    }\n  ]\n}",
+          "body": "{\n  \"number\": \"2795EF65\",\n  \"date\": \"2019-07-18T17:49:00.000+0000\",\n  \"status\": \"canceled\",\n  \"total\": 23999,\n  \"discount\": 990,\n  \"deliveryFee\": 990,\n  \"customer\": {\n    \"name\": \"Bruce Wayne\"\n  },\n  \"items\": [\n    {\n      \"code\": \"C5BFAAF9\",\n      \"title\": \"Ração Canil 30KG\",\n      \"price\": 20000\n    },\n    {\n      \"code\": \"AFA21D81\",\n      \"title\": \"Coleira Cachorro Petz\",\n      \"price\": 3990\n    }\n    ,\n    {\n      \"code\": \"AFA21F85\",\n      \"title\": \"Cama de Cachorro\",\n      \"price\": 6028\n    }\n  ]\n}",
           "latency": 800,
           "statusCode": 200,
           "label": "",
